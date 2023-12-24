@@ -1,0 +1,23 @@
+{
+  "name": "test-graphql",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild --bundle --packages=external index.ts --outfile=index.js",
+    "generate": "genql -e \"http://localhost:4000/graphql\" -o \"./client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^16.8.1",
+    "graphql-yoga": "^5.1.0"
+  },
+  "devDependencies": {
+    "@genql/cli": "^6.2.1",
+    "esbuild": "^0.19.10",
+    "ts-node": "^10.9.2"
+  }
+}
